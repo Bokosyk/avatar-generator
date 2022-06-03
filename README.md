@@ -9,7 +9,7 @@ npm install
 ```
 Boot up a dev server:
 ```
-npm run start
+node server.js
 ```
 
 You should be able to access the application at `http://localhost:3000`.
