@@ -13,6 +13,9 @@ app.use(express.json());
 // to map the EJS template engine to “.html” files
 app.engine('html', require('ejs').renderFile);
 
+// Tells express to serve files statically
+app.use(express.static('./'));
+
 var PORT = process.env.PORT || 3000;
 
 // Renders page
