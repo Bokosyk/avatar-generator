@@ -15,6 +15,7 @@ app.engine('html', require('ejs').renderFile);
 
 var PORT = process.env.PORT || 3000;
 
+// Renders page
 app.get('/', function (req, res) {
   res.render("index.html")
 });
