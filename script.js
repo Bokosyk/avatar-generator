@@ -1,3 +1,5 @@
+const path = require('path');
+
 window.onload = function () {
 
     function getFilename(fullPath) {
@@ -10,7 +12,7 @@ window.onload = function () {
     var maleCharBaseName = getFilename("Assets/maleChar/base/malebase" + malecharBaseNum + ".png")
     // WIP
     console.log(maleCharBaseName)
-    maleCharBase.src = getFilename(maleCharBaseName)
+    maleCharBase.src = path.dirname('/Assets/maleChar/base/malebase1.png')
     console.log(maleCharBaseName.src)
 
     maleCharBase.onload = function () {
